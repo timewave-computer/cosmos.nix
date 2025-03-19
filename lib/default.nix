@@ -138,7 +138,16 @@ nix-std: {
           ]
           ++ additionalLdFlags;
       }
-      // buildGoModuleArgs);
+      // buildGoModuleArgs
+      // {
+        # merge default meta settings after so meta.mainProgram
+        # doesn't get overriden when setting other meta arguments
+        meta =
+          {
+            mainProgram = "${name}d";
+          }
+          // (buildGoModuleArgs.meta or {});
+      });
 in {
   # A helper for building rust cosmwasm smart contracts. Does some best practices like using binaryren wasm-opt
   # to optimize the bytecode, and runs cosmwasm-check to validate.
