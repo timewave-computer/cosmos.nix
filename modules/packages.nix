@@ -113,8 +113,8 @@
           inherit cosmosLib;
         };
         neutron-testing = self'.packages.neutron.overrideAttrs (_: {
-          flags = [ "-trimpath" ];
-          tags = [ "skip_ccv_msg_filter" ];
+          flags = ["-trimpath"];
+          tags = ["skip_ccv_msg_filter"];
         });
         andromeda = import ../packages/andromeda.nix {
           inherit (inputs) andromeda-src;
