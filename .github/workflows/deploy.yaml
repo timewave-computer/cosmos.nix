@@ -28,9 +28,8 @@ jobs:
 
       - uses: cachix/cachix-action@v14
         with: 
-          name: cosmos-nix
-          authToken: '${{ secrets.COSMOS_CACHIX_KEY }}'
-
+          name: timewave
+          authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
 
       - name: Check 🔎
         run: |
