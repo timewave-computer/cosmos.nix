@@ -112,6 +112,10 @@
           inherit (self'.packages) libwasmvm_2_0_3;
           inherit cosmosLib;
         };
+        neutron-testing = self'.packages.neutron.overrideAttrs (_: {
+          flags = [ "-trimpath" ];
+          tags = [ "skip_ccv_msg_filter" ];
+        });
         andromeda = import ../packages/andromeda.nix {
           inherit (inputs) andromeda-src;
           inherit (self'.packages) libwasmvm_1_3_0;
