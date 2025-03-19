@@ -26,9 +26,3 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           generateReleaseNotes: true
-
-      - name: Push to FlakeHub ❄️
-        uses: determinatesystems/flakehub-push@main
-        with:
-          visibility: "public"
-          tag: "${{ inputs.tag }}"
