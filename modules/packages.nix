@@ -164,6 +164,11 @@
           inherit (cosmosLib) mkCosmosGoApp;
           inherit (inputs) slinky-src;
         };
+        terra = import ../packages/terra.nix {
+          inherit (inputs) terra-src;
+          inherit (self'.packages) libwasmvm_1_5_2;
+          inherit cosmosLib;
+        };
         umee = import ../packages/umee.nix {
           inherit (cosmosLib) mkCosmosGoApp;
           inherit (inputs) umee-src;

@@ -326,6 +326,9 @@
 
     haqq-src.url = "github:haqq-network/haqq/18370cfb2f9aab35d311c4c75ab5586f50213830";
 
+    terra-src.url = "github:terra-money/core/v2.12.4";
+    terra-src.flake = false;
+
     # contracts
     cw-plus-src.url = "github:CosmWasm/cw-plus/v1.1.2";
     cw-plus-src.flake = false;

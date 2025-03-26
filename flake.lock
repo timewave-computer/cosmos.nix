@@ -1553,6 +1553,7 @@
         "stargaze-src": "stargaze-src",
         "stoml-src": "stoml-src",
         "stride-src": "stride-src",
+        "terra-src": "terra-src",
         "umee-src": "umee-src",
         "wasmd-src": "wasmd-src",
         "wasmvm_1-src": "wasmvm_1-src",
@@ -1793,6 +1794,23 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "terra-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1724341730,
+        "narHash": "sha256-/a58FXB94csL1sxkH6c+Gd12VYXVOyWJvnHX+qlFAuw=",
+        "owner": "terra-money",
+        "repo": "core",
+        "rev": "ec5e2c5ef5c76280868d9b0da22f07149c81858a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "terra-money",
+        "ref": "v2.12.4",
+        "repo": "core",
         "type": "github"
       }
     },
