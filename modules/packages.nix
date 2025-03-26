@@ -178,10 +178,12 @@
           inherit (self'.packages) libwasmvm_2_1_2;
           inherit cosmosLib;
         };
-        rollapp-evm = import ../packages/rollapp-evm.nix {
-          inherit (cosmosLib) mkCosmosGoApp;
-          inherit (inputs) rollapp-evm-src;
-        };
+        # build fails with a outdated go.mod file
+        # updating it yields in error: rollappd contains a forbidden reference to /build/
+        # rollapp-evm = import ../packages/rollapp-evm.nix {
+        #   inherit (cosmosLib) mkCosmosGoApp;
+        #   inherit (inputs) rollapp-evm-src;
+        # };
       }
       # This list contains attr sets that are recursively merged into the
       # base attrset
