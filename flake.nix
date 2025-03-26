@@ -303,6 +303,9 @@
     neutron-src.url = "github:neutron-org/neutron/v4.2.2";
     neutron-src.flake = false;
 
+    noble-src.url = "github:noble-assets/noble/v9.0.2";
+    noble-src.flake = false;
+
     provenance-src.url = "github:/provenance-io/provenance/v1.19.1";
     provenance-src.flake = false;
 

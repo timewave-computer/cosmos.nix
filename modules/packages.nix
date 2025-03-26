@@ -116,6 +116,10 @@
           flags = ["-trimpath"];
           tags = ["skip_ccv_msg_filter"];
         });
+        noble = import ../packages/noble.nix {
+          inherit (inputs) noble-src;
+          inherit cosmosLib;
+        };
         andromeda = import ../packages/andromeda.nix {
           inherit (inputs) andromeda-src;
           inherit (self'.packages) libwasmvm_1_3_0;

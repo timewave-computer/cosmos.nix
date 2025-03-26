@@ -1347,6 +1347,23 @@
         "type": "github"
       }
     },
+    "noble-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1741794934,
+        "narHash": "sha256-57sCHDp/hySGWbIlqA/bJz5BJGCAL67yzRCUvFVZHvk=",
+        "owner": "noble-assets",
+        "repo": "noble",
+        "rev": "ea16e65b132b8758d69095446aa87a3edaf764e2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "noble-assets",
+        "ref": "v9.0.2",
+        "repo": "noble",
+        "type": "github"
+      }
+    },
     "osmosis-src": {
       "flake": false,
       "locked": {
@@ -1521,6 +1538,7 @@
         "nix-std": "nix-std",
         "nix2container": "nix2container",
         "nixpkgs": "nixpkgs_2",
+        "noble-src": "noble-src",
         "osmosis-src": "osmosis-src",
         "provenance-src": "provenance-src",
         "regen-src": "regen-src",
