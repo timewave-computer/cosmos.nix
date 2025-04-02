@@ -248,4 +248,4 @@
       };
     };
 in
-  gaias // {gaia-main = gaias.gaia8;}
+  gaias // {gaia = gaias.gaia20;}
